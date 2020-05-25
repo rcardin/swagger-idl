@@ -64,7 +64,7 @@
               <goal>generate</goal>
             </goals>
             <configuration>
-              <inputSpec>/home/gpavan/Projects/swagger-idl/task-api.json</inputSpec>
+              <inputSpec>${project.parent.basedir}/task-api.json</inputSpec>
               <generatorName>java</generatorName>
               <library>resttemplate</library>
               <generateModels>true</generateModels>
@@ -75,7 +75,6 @@
             </configuration>
           </execution>
         </executions>
-        <dependencies></dependencies>
       </plugin>
     </plugins>
   </build>
